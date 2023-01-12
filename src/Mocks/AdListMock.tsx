@@ -9,7 +9,7 @@ export const AddListMock = [
         tempoAnuncio: '2',
         periodo: 'dias',
         preco: '40/h',
-        url: require('C:/Users/Rhaniery/Documents/AppBico/src/Mocks/People/andre.jpg'),
+        url: require('C:/Users/Rhaniery/Documents/app-bico/bico/src/Mocks/People/andre.jpg'),
 
     },
     {
@@ -22,7 +22,7 @@ export const AddListMock = [
         tempoAnuncio: '1',
         periodo: 'hora',
         preco: '40/h',
-        url: require('C:/Users/Rhaniery/Documents/AppBico/src/Mocks/People/marcia.jpg'),
+        url: require('C:/Users/Rhaniery/Documents/app-bico/bico/src/Mocks/People/marcia.jpg'),
 
     },
     {
@@ -35,7 +35,7 @@ export const AddListMock = [
         tempoAnuncio: '1',
         periodo: 'semana',
         preco: '40/h',
-        url: require('C:/Users/Rhaniery/Documents/AppBico/src/Mocks/People/lucas.jpg'),
+        url: require('C:/Users/Rhaniery/Documents/app-bico/bico/src/Mocks/People/lucas.jpg'),
 
     },
     {
@@ -48,7 +48,7 @@ export const AddListMock = [
         tempoAnuncio: '30',
         periodo: 'minutos',
         preco: '40/h',
-        url: require('C:/Users/Rhaniery/Documents/AppBico/src/Mocks/People/maria.jpg'),
+        url: require('C:/Users/Rhaniery/Documents/app-bico/bico/src/Mocks/People/maria.jpg'),
 
     },
     {
@@ -61,6 +61,6 @@ export const AddListMock = [
         tempoAnuncio: '1',
         periodo: 'mes',
         preco: '40/h',
-        url: require('C:/Users/Rhaniery/Documents/AppBico/src/Mocks/People/miguel.jpg'),
+        url: require('C:/Users/Rhaniery/Documents/app-bico/bico/src/Mocks/People/miguel.jpg'),
     }
 ]
