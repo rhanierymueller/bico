@@ -12,7 +12,7 @@ const Cadastro = () => {
     const customLabelLogin = (
         <Text style={tw`text-red-700 font-semibold pl-1`}>Entrar</Text>
     )
-    const customLabelAjuda = (
+    const customerLabelHelper = (
         <Text style={tw`text-red-700 font-semibold pl-1`}>Fale com a gente</Text>
     )
 
@@ -27,14 +27,14 @@ const Cadastro = () => {
                     <TouchableOpacity style={tw`rounded h-11 justify-center items-center bg-facebook-color mt-4`}
                         onPress={() => navigation.navigate('Menu')}>
                         <View style={tw`flex-row justify-between items-center`}>
-                            <Image style={tw`h-8 w-8 right-14`} source = {require('C:/Users/Rhaniery/Documents/AppBico/src/images/facebook.png')} />  
+                            <Image style={tw`rounded h-5 w-5 right-14`} source = {require('C:/Users/Rhaniery/Documents/app-bico/bico/src/images/facebook.png')} />  
                             <Text style={tw`text-white`}>Continuar com o Facebook</Text>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity style={tw`border border-slate-300 rounded h-11 justify-center items-center bg-white mt-4`}
                         onPress={() => navigation.navigate('Menu')}>
                         <View style={tw`flex-row justify-between items-center `}>
-                            <Image style={tw`h-8 w-8 right-13`} source = {require('C:/Users/Rhaniery/Documents/AppBico/src/images/gmail.png')} />  
+                            <Image style={tw`rounded h-5 w-5 right-14`} source = {require('C:/Users/Rhaniery/Documents/app-bico/bico/src/images/gmail.png')} />  
                             <Text style={tw`pr-7`}>Continuar com Google</Text>
                         </View>
                     </TouchableOpacity>
@@ -62,7 +62,7 @@ const Cadastro = () => {
                     </View>
                     <View style={tw`flex-row mt-[55%] justify-center items-center`}>
                         <Text style={tw`mx-1`}>Precisa de ajuda?</Text>
-                        <TouchableOpacity>{customLabelAjuda}</TouchableOpacity>
+                        <TouchableOpacity>{customerLabelHelper}</TouchableOpacity>
                     </View>
                 </View>
             </SafeAreaView>
