@@ -14,4 +14,4 @@ const HR = ({tw, color, style}: Props) => {
   return <View style={{...defaultStyle, ...style, ...colorStyle}} />;
 };
 
-export default HR;
+export default HR;
