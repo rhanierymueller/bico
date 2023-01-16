@@ -8,6 +8,7 @@ import {ProfessionsMock} from '../../../Mocks/ProfessionsMock';
 import {ScrollView} from 'react-native-gesture-handler';
 import Menu from '../../../components/Menu';
 import type {CadAnuncio} from '../../../../src/Models/CadAnuncio';
+import TypeAhead from '../../../components/TypeAhead';
 
 const CadastroAnuncio = () => {
 	const navigation = useNavigation();
@@ -62,13 +63,7 @@ const CadastroAnuncio = () => {
 							</View>
 						) : (
 							<>
-								{list.map(item => (
-									<TouchableOpacity style={tw`border-solid border-[0.50] border-slate-400 mt-2 mx-10 rounded`}>
-										<View style={tw`bg-gray-50 py-5 pr-10 items-center`} key={item.id}>
-											<Text style={tw`text-slate-600 pl-10 font-semibold text-xl`}>{item.nome}</Text>
-										</View>
-									</TouchableOpacity>
-								))}
+								<TypeAhead tw={tw} title='Teste' placeholder='teste' content={list}>
 							</>
 						)}
 					</ScrollView>
