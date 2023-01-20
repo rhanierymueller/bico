@@ -1,7 +1,7 @@
 
 import {useNavigation} from '@react-navigation/native';
 import React, {Fragment, useEffect, useState} from 'react';
-import {Text, TextInput, TouchableOpacity, View, Image, Dimensions} from 'react-native';
+import {Text, TextInput, View, Image, Dimensions} from 'react-native';
 import tw from '../../../../service/tw';
 import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 import {AddListMock} from '../../../../src/Mocks/AdListMock';
@@ -34,11 +34,11 @@ const AddList = () => {
 			<ScrollView style={tw`flex-1`}>
 				<View style={tw`flex-1 px-5 justify-center bg-gray-50 mt-5 pb-2`}>
 					<View style={tw`flex-1 pt-4 justify-center`}>
-						<TextInput style={tw`h-11 px-2 border border-slate-500 rounded-md`} placeholder='Pesquisar' value={search} onChangeText={setSearch}></TextInput>
+						<TextInput style={tw`h-11 px-2 border border-slate-500 rounded-md font-ubuntu`} placeholder='Pesquisar' value={search} onChangeText={setSearch}></TextInput>
 					</View>
 					{list.length === 0 ? (
 						<View style={tw`flex-1 justify-center items-center pt-[80%]`}>
-							<Text>Nenhum resutado foi encontrado</Text>
+							<Text style={tw`font-ubuntu`}>Nenhum resutado foi encontrado</Text>
 						</View>
 					) : (
 						<>
@@ -46,12 +46,12 @@ const AddList = () => {
 								<View style={tw`mt-5 rounded border border-slate-400`} key={item.id}>
 									<Image style={tw`h-60 w-[100%]`} source={item.url} />
 									<View style={tw`m-4 mt-2`}>
-										<Text style={tw`text-xl`}>{item.profissao}</Text>
-										<Text style={tw`text-sm pt-2`}>{item.descricao}</Text>
-										<Text style={tw`text-lg pt-2`}>R$ {item.preco}</Text>
+										<Text style={tw`text-xl font-ubuntu`}>{item.profissao}</Text>
+										<Text style={tw`text-sm pt-2 font-ubuntu`}>{item.descricao}</Text>
+										<Text style={tw`text-lg pt-2 font-ubuntu`}>R$ {item.preco}</Text>
 										<View style={tw`flex-row justify-between pt-2`}>
-											<Text><Image style={tw`h-3 w-3 mb-5`} source={require('../../../images/pin.png')}/> {item.cidade} - {item.Estado}</Text>
-											<Text><Image style={tw`h-3 w-3`} source={require('../../../images/profile.png')}/> {item.nome}</Text>
+											<Text style={tw`font-ubuntu`}><Image style={tw`h-3 w-3 mb-5`} source={require('../../../images/pin.png')}/> {item.cidade} - {item.Estado}</Text>
+											<Text style={tw`font-ubuntu`}><Image style={tw`h-3 w-3`} source={require('../../../images/profile.png')}/> {item.nome}</Text>
 										</View>
 									</View>
 								</View>
