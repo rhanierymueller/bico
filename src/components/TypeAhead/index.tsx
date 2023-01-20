@@ -41,8 +41,8 @@ const TypeAhead = ({tw, title, placeholder, style, styleTitle, listStyle, inputS
 					setShow(!show);
 				}}>
 					{!show ? (
-						<Image source={require('C:/Users/Rhaniery/Documents/app-bico/bico/src/images/arrow-down.png')} />
-					) : <Image source={require('C:/Users/Rhaniery/Documents/app-bico/bico/src/images/arrow-up.png')} />}
+						<Image source={require('../../images/arrow-down.png')} />
+					) : <Image source={require('../../images/arrow-up.png')} />}
 				</TouchableOpacity>
 			</View>
 			{show ? (

@@ -36,10 +36,10 @@ const CadastroAnuncio = () => {
 				<View style={tw`flex-1 mx-18 bg-white justify-center`}>
 					<View style={tw`flex-row justify-around px-15`}>
 						<TouchableOpacity style={tw`h-12 w-12 rounded border items-center justify-center border-slate-400 bg-white`}>
-							<Image style={tw`h-7 w-7`} source={require('C:/Users/Rhaniery/Documents/app-bico/bico/src/images/servico.png')} />
+							<Image style={tw`h-7 w-7`} source={require('../../../images/servico.png')} />
 						</TouchableOpacity>
 						<TouchableOpacity style={tw`h-12 w-12 rounded items-center justify-center border border-slate-400 bg-white`}>
-							<Image style={tw`h-7 w-7`} source={require('C:/Users/Rhaniery/Documents/app-bico/bico/src/images/camera.png')} />
+							<Image style={tw`h-7 w-7`} source={require('../../../images/camera.png')} />
 						</TouchableOpacity>
 					</View>
 				</View>

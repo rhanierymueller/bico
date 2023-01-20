@@ -3,11 +3,12 @@ module.exports = {
 		'./src/pages/**/*.{js,ts,jsx,tsx}',
 		'./src/components/**/*.{js,ts,jsx,tsx}',
 		'./src/screens/**/*.{js,ts,jsx,tsx}',
+		'./assets/fonts/',
 	],
 	darkMode: false, // Or 'media' or 'class'
 	theme: {
 		fontFamily: {
-			inter: ['Inter', 'sans-serif'],
+			ubuntu: ['ubuntu'], // Outputs "font-sans"
 		},
 		extend: {
 			fontSize: {
@@ -20,7 +21,7 @@ module.exports = {
 		},
 	},
 	fontFamily: {
-		inter: ['Inter', 'sans-serif'],
+		ubuntu: ['ubuntu'],
 	},
 	variants: {
 		extend: {},

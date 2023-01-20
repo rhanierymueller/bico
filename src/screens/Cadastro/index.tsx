@@ -28,7 +28,7 @@ const Cadastro = () => {
 						navigation.navigate('Menu');
 					}}>
 					<View style={tw`flex-row justify-between items-center`}>
-						<Image style={tw`rounded h-5 w-5 right-14`} source = {require('C:/Users/Rhaniery/Documents/app-bico/bico/src/images/facebook.png')} />
+						<Image style={tw`rounded h-5 w-5 right-14`} source = {require('../../images/facebook.png')} />
 						<Text style={tw`text-white`}>Continuar com o Facebook</Text>
 					</View>
 				</TouchableOpacity>
@@ -37,7 +37,7 @@ const Cadastro = () => {
 						navigation.navigate('Menu');
 					}}>
 					<View style={tw`flex-row justify-between items-center `}>
-						<Image style={tw`rounded h-5 w-5 right-14`} source = {require('C:/Users/Rhaniery/Documents/app-bico/bico/src/images/gmail.png')} />
+						<Image style={tw`rounded h-5 w-5 right-14`} source = {require('../../images/gmail.png')} />
 						<Text style={tw`pr-7`}>Continuar com Google</Text>
 					</View>
 				</TouchableOpacity>
